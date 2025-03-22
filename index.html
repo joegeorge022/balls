@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bouncing balls</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>bouncing balls</h1>
+  <canvas></canvas>
+  <div id="popup" style="
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  font-size: 24px;
+  text-align: center;
+  display: none;
+  z-index: 10;
+">
+    🎉 You cleared all balls! 🎉<br><br>
+    <button onclick="resetGame()" style="
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+  ">Restart</button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
